@@ -460,7 +460,7 @@ div.invitado:hover p {
 }
 
 
-/* Contador */
+/* Paralax */
 .parallax::before{
   width: 100%;
   height: 100%;
@@ -470,23 +470,102 @@ div.invitado:hover p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
 }
-div.contador {
+
+/* Newsletter */
+div.newsletter {
   position: relative;
   height: auto;
 }
-div.contador::before {
-  background-image: url(../img/Poster2.jpg);
-  content: '';
+div.newsletter::before {
+  background-image: url(../img/bioanalisis.jpg);
+  content: "";
 }
-ul.resumen-evento {
+div.newsletter .contenido {
+  padding: 100px 0;
+  color: #164389;
+  text-align: center;
   position: relative;
-  padding: 120px 0;
+  font-family: 'Oswald' sans-serif;
 }
-ul.resumen-evento li {
-  width: 50%;
+div.newsletter .contenido p {
+  font-size: 2em;
+  color: #009848;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div.newsletter .contenido h3 {
+  color: #164389;
+  font-size: 7vh;
+  font-family: 'PT Sans', sans-serif;
+}
+/* Cuenta regresiva */
+p.numero {
+  color: #009848;
+  font-size: 4em;
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: 'Oswald', sans-serif;
+}
+div.cuenta-regresiva ul li {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media only screen and (min-width:768px) {
+  div.cuenta-regresiva ul li {
+    width: 25%;
+    float: left;
+  }
 }
 
+/* Footer */
+footer {
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+footer .contenedor > div {
+  color: #fff;
+  padding: 0px 20px;
+  font-size: 12px;
+  text-align: justify;
+}
+@media only screen and (min-width: 768px) {
+  footer .contenedor > div {
+    width: 33.3%;
+    float: left;
+  }
+}
+footer h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+footer h3 span {
+  color: #009848;
+}
+footer .ultimos-cursos li {
+  margin-bottom: 10px;
+}
+footer nav.redes-sociales {
+  text-align: left;
+}
+footer nav.redes-sociales a i {
+  color: #fff;
+}
+p.copyright {
+  background-color: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+}
 
 
 /* ==========================================================================
