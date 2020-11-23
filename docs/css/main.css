@@ -568,6 +568,68 @@ p.copyright {
 }
 
 
+/* Páginas Internas */
+/* Registro */
+form.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+form.registro label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #164389;
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+div.caja {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+div.campo {
+  padding: 20px;
+}
+@media only screen and (min-width: 768px){
+  div.campo{
+    float: left;
+    width: 33.33%;
+  }
+}
+.contenido-curycon {
+  padding: 20px;
+}
+.contenido-curycon > div label{
+  display: block;
+  margin-bottom: 10px;
+}
+.contenido-curycon > div input{
+  margin-right: 10px;
+}
+/* PROBLEMAS */
+.resumen div.extra {
+  /* float: left; */
+  width: 100%;
+  padding: 20px;
+}
+.resumen div.extra label {
+  display: block;
+}
+div.submit input {
+  /* float: right; */
+  display: block;
+  padding: 20px auto;
+}
+#error{
+  clear: both;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
