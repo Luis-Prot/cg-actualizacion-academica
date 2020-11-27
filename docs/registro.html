@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registro | CG Actualización Académica</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <header class="site-header">
+        <div class="hero">
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="https://www.facebook.com/CG.ActualizacionAcademica" target="_blank"><i
+                            class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://vimeo.com/user104783284" target="_blank"><i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://wa.me/5212294538039" target="_blank"><i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></a>
+                </nav>
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 1-9 Dic</p>
+                        <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Online</p>
+                    </div>
+                    <h1 class="nombre-sitio">Congreso Nacional e Internacional de Química Clínica en investigación en
+                        Ciencias
+                    </h1>
+                    <!-- <p class="slogan"><span>Modalidad on-line</span></p> -->
+                </div> <!-- informacion evento -->
+            </div>
+        </div>
+    </header>
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/logo0.png" alt="logo cgacademico">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal clearfix">
+                <a href="#">Conferencias</a>
+                <a href="#">Calendario</a>
+                <a href="#">Profesores</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoFQ6s9vrW_PSukfiLbkk3MkHs0KSgGGLd9Bcb2dIV7QpiEw/viewform"
+                    target="_blank">Inscripción</a>
+            </nav>
+        </div> <!-- Contenedor-->
+    </div>
+    <!--.barra-->
+
+    <section class="contenedor">
+        <h2>Registro de Usuarios</h2>
+        <form action="#" id="registro" class="registro" method="POST">
+            <div id="datos_usuario" class="registro caja clearfix">
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu Nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu Apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                </div>
+                <div id="error">
+
+                </div>
+            </div> <!-- #datos-usuario-->
+
+            <div id="eventos" class="eventos clearfix">
+                <h3>Tus Intereses</h3>
+                <div class="caja">
+                    <div id="diplomados" class="contenido-curycon clearfix">
+                        <h4>Diplomados:</h4>
+                        <div>
+                            <label><input type="checkbox" name="registro" id="DULC" value="DULC">Uroanálisis Líquidos
+                                Corporales</label>
+                            <label><input type="checkbox" name="registro" id="DQC" value="DQC">Química Clínica</label>
+                            <label><input type="checkbox" name="registro" id="DBCP" value="DBCP">Bacteriología Clínica y
+                                Pruebas de Susceptibilidad Antimicrobiana</label>
+                            <label><input type="checkbox" name="registro" id="DBM" value="DBM">Biología Molecular
+                                Aplicada
+                                al Diagnóstico Clínico</label>
+                            <label><input type="checkbox" name="registro" id="DHSR" value="DHSR">Hematopatológia Serie
+                                Roja</label>
+                            <label><input type="checkbox" name="registro" id="DPLC" value="DPLC">Patología en el
+                                Laboratorio
+                                Clínico</label>
+                        </div>
+                    </div> <!-- Diplomados -->
+                    <div id="diplomados" class="contenido-curycon clearfix">
+                        <h4>Cursos:</h4>
+                        <div>
+                            <label><input type="checkbox" name="registro" id="CCCU" value="CCCU">Correlación Clínica y
+                                Casos
+                                de Uroanálisis</label>
+                            <label><input type="checkbox" name="registro" id="CEC" value="CEC">Química Clínica</label>
+                            <label><input type="checkbox" name="registro" id="LCLD" value="LCLD">Líquidos Corporales
+                                (Líquidos de Derrame)</label>
+                            <label><input type="checkbox" name="registro" id="CPBE" value="CPBE">Protocolos
+                                Bacteriológicos
+                                para el Estudio de las Bacterimias, Sepsis, Infecciones por Catéter</label>
+                            <label><input type="checkbox" name="registro" id="CTVB" value="CTVB">Taxonomía y Virulencia
+                                de
+                                Bacterias</label>
+                            <label><input type="checkbox" name="registro" id="TSH" value="TSH">Tópicos Selectos de
+                                Hemostasia</label>
+                        </div>
+                    </div> <!-- Cursos -->
+                </div> <!-- .caja -->
+            </div> <!-- #eventos -->
+
+            <div id="resumen" class="resumen">
+                <h3>Envio de Formulario</h3>
+                <div class="caja clearfix">
+                    <div class="extra">
+                        <label for="comentario">Comentarios</label>
+                        <textarea name="cometario" id="comentario" cols="30" rows="10"
+                            placeholder="Favor de incluir un comentario"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="btnRegistro" class="button" value="Enviar">
+                    </div>
+                </div>
+            </div> <!-- #resumen -->
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>CG <span>Actualización Académica</span></h3>
+                <p>Nos dedicamos a dar cursos y diplomados para la formación de académicos, técnicos e investigadores en
+                    ciencias Químico-Biológicas o de ciencias afines a la salud</p>
+            </div>
+            <div class="ultimos-cursos">
+                <h3>Últimos <span>Cursos y Diplomados</span></h3>
+                <ul>
+                    <li><a href="#"></a> Diplomado en Uroanálisis y Líquidos Corporales</li>
+                    <li><a href="#"></a> Diplomado en Bíologia Molecular</li>
+                    <li><a href="#"></a> Diplomados en Micología</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>Sociales</span></h3>
+                <nav class="redes-sociales">
+                    <a href="https://www.facebook.com/CG.ActualizacionAcademica" target="_blank"><i
+                            class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://vimeo.com/user104783284" target="_blank"><i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://wa.me/5212294538039" target="_blank"><i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">
+            Todos los derechos reservados &copy CG Actualización Académica.
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

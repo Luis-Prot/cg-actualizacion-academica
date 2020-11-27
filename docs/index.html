@@ -39,8 +39,7 @@
             <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 1-9 Dic</p>
             <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Online</p>
           </div>
-          <h1 class="nombre-sitio">Congreso Nacional e Internacional de Química Clínica en investigación en Ciencias
-          </h1>
+          <h1 class="nombre-sitio">CG Actualización Académica</h1>
           <!-- <p class="slogan"><span>Modalidad on-line</span></p> -->
         </div> <!-- informacion evento -->
       </div>
@@ -57,16 +56,19 @@
         <span></span>
       </div>
       <nav class="navegacion-principal clearfix">
-        <a href="#">Conferencias</a>
-        <a href="#">Calendario</a>
-        <a href="#">Profesores</a>
+        <a href="#">Congreso</a>
+        <a href="#">Cursos y Diplomados</a>
+        <a href="#profesores">Profesores</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoFQ6s9vrW_PSukfiLbkk3MkHs0KSgGGLd9Bcb2dIV7QpiEw/viewform"
           target="_blank">Inscripción</a>
+        <a href="http://acad-cg.online/login/index.php" target="_blank">Iniciar Sesión</a>
       </nav>
     </div> <!-- Contenedor-->
-  </div>  <!--.barra-->
+  </div>
+  <!--.barra-->
   <section class="seccion contenedor">
-    <h2>El mejor congreso de Química Clínica</h2>
+    <h2>Próximos Eventos</h2>
+    <h3>Congreso Nacional e Internacional de Química Clínica en investigación en Ciencias</h3>
     <p>
       Se presentaran los mejores investigadores en el area de Química Clínica tanto en la academia, industria, sectores
       privados y publicos. <span>Te esperamos</span>
@@ -88,26 +90,61 @@
             <a href="#diplomados"><i class="fa fa-book" aria-hidden="true"></i> Diplomados</a>
             <a href="#cursos"><i class="fa fa-university" aria-hidden="true"></i> Cursos</a>
           </nav>
-          <div id="conferencias" id="info-curso ocultar clearfix">
+
+          <div id="conferencias" class="info-curso ocultar clearfix">
             <div class="detalle-evento">
               <h3>Clasificación y Utilidad de Antibióticos Betalactamicos</h3>
-              <p><i class="fa fa-clock-o" aria-hidden="true"></i> ~2 hora</p>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> ~2 horas</p>
               <p><i class="fa fa-calendar" aria-hidden="true"></i> 1-9 Diciembre</p>
               <p><i class="fa fa-user" aria-hidden="true"></i> QBP. Domingo Sánchez Francia</p>
             </div>
             <div class="detalle-evento">
               <h3>Higado Graso No Alcohólico</h3>
-              <p><i class="fa fa-clock-o" aria-hidden="true"></i> ~2 hora</p>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> ~2 horas</p>
               <p><i class="fa fa-calendar" aria-hidden="true"></i> 1-9 Diciembre</p>
               <p><i class="fa fa-user" aria-hidden="true"></i> Dra. Norma Angélica Morales Peña</p>
             </div>
             <a href="" class="button">Ver todos</a>
-          </div> <!-- .conferencias -->
+          </div> <!-- #conferencias -->
+
+          <div id="diplomados" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Uroanálisis y Líquidos Corporales</h3>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 160 horas</p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 8 meses</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> M. en C. Vicente de Mária Campos Otegui</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Biología Molecular Orientado al Diágnostico Clínico</h3>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 160 hora</p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> 10 meses</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> M. en C. Elizabeth Pérez Rodríguez</p>
+            </div>
+            <a href="" class="button">Ver todos</a>
+          </div> <!-- #diplomados -->
+
+          <div id="cursos" class="info-curso ocultar clearfix">
+            <div class="detalle-evento">
+              <h3>Correlación Clínica y Casos de Uroanálisis</h3>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 20 horas</p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> Proximamente</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> QBP. Domingo Sánchez Francia</p>
+            </div>
+            <div class="detalle-evento">
+              <h3>Tópicos Selectos de Hemostasia</h3>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 24 horas</p>
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> Proximamente</p>
+              <p><i class="fa fa-user" aria-hidden="true"></i> QC. Brenda Saraí Zuñiga Ascencio & QC. Carlos Virgen Cruz
+              </p>
+            </div>
+            <a href="" class="button">Ver todos</a>
+          </div> <!-- #cursos -->
+
         </div> <!-- .programa-evento -->
       </div> <!-- .contenedor -->
     </div> <!-- .contenido-programa -->
   </section> <!-- .programa -->
-  <section class="invitados contenedor seccion">
+  <section id="profesores" class="invitados contenedor seccion">
     <h2>Nuestros Profesores e Invitados</h2>
     <ul class="lista-invitados clearfix">
       <li>
@@ -225,16 +262,16 @@
     <div class="cuenta-regresiva contenedor">
       <ul class="clearfix">
         <li>
-          <p class="numero">20</p> días
+          <p id="dias" class="numero"></p> días
         </li>
         <li>
-          <p class="numero">9</p> horas
+          <p id="horas" class="numero"></p> horas
         </li>
         <li>
-          <p class="numero">20</p> minutos
+          <p id="minutos" class="numero"></p> minutos
         </li>
         <li>
-          <p class="numero">20</p> segundos
+          <p id="segundos" class="numero"></p> segundos
         </li>
       </ul>
     </div>
@@ -274,6 +311,9 @@
 
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+  <!-- <script src="js/jquery.animateNumber.min.js"></script> -->
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.lettering-0.6.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

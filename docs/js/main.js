@@ -6,15 +6,9 @@
         // Datos Usuario
         var nombre = document.getElementById('nombre');
         var apellido = document.getElementById('apellido');
-        var enail = document.getElementById('email');
+        var email = document.getElementById('email');
         var errorDiv = document.getElementById('error')
         var botonRegistro = document.getElementById('btnRegistro');
-
-        // Validacion de Campos
-        nombre.addEventListener('blur', validarCampos);
-        apellido.addEventListener('blur', validarCampos);
-        email.addEventListener('blur', validarCampos);
-        email.addEventListener('blur', validarMail);
 
         function validarCampos() {
             if (this.value == '') {
@@ -28,8 +22,8 @@
             };
         };
 
-        function validarMail (){
-            if (this.value.indexOf("@") > -1){
+        function validarMail() {
+            if (this.value.indexOf("@") > -1) {
                 errorDiv.style.display = 'none';
                 errorDiv.style.border = '1px solid #cccccc';
             } else {
@@ -39,7 +33,43 @@
                 errorDiv.style.border = '1px solid red';
             };
         };
+        // Validacion de Campos
+        nombre.addEventListener('blur', validarCampos);
+        apellido.addEventListener('blur', validarCampos);
+        email.addEventListener('blur', validarCampos);
+        email.addEventListener('blur', validarMail);
 
 
     }); // DOMContentLoader
 })();
+
+$(function () {
+
+    // Lettering
+    $('.nombre-sitio').lettering();
+
+    // Programa de conferencias
+    $('.programa-evento .info-curso:first').show()
+    $('.menu-programa a:first').addClass('activo');
+
+    $('.menu-programa a').on('click', function () {
+        $('.menu-programa a').removeClass('activo');
+        $(this).addClass('activo');
+        $('.ocultar').fadeOut(500);
+        var enlace = $(this).attr('href');
+        $(enlace).fadeIn(1000);
+        return false
+    });
+
+    // Contador no implementado
+    // Animaciones para cuenta-regresiva
+    // $('.cuenta-regresiva ul li:nth-child(1) p').animateNumber({number:3}, 1200);
+
+    // Cuenta regresiva
+    $('.cuenta-regresiva').countdown('2020/12/1 09:00:00', function(event){
+        $('#dias').html(event.strftime('%D'));
+        $('#horas').html(event.strftime('%H'));
+        $('#minutos').html(event.strftime('%M'));
+        $('#segundos').html(event.strftime('%S'));
+    })
+});
