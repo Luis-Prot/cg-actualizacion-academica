@@ -34,11 +34,12 @@
             };
         };
         // Validacion de Campos
+        if document.getElementById('calcular'){
         nombre.addEventListener('blur', validarCampos);
         apellido.addEventListener('blur', validarCampos);
         email.addEventListener('blur', validarCampos);
         email.addEventListener('blur', validarMail);
-
+    }
 
     }); // DOMContentLoader
 })();
@@ -47,6 +48,26 @@ $(function () {
 
     // Lettering
     $('.nombre-sitio').lettering();
+
+    // Menu Fijo
+    var windowHeight = $(window).height();
+    var barraAltura = $('.barra').innerHeight();
+    $(window).scroll(function (){
+        var scroll = $(window).scrollTop();
+        if(scroll > windowHeight){
+            $('.barra').addClass('fixed');
+            $('body').css({'margin-top': barraAltura+'px'});
+        } else {
+            $('.barra').removeClass('fixed');
+            $('body').css({'margin-top': '0px'});
+        }
+    });
+
+
+    // Menu Responsive
+    $('.menu-movil').on('click', function(){
+        $('.navegacion-principal').slideToggle();
+    });
 
     // Programa de conferencias
     $('.programa-evento .info-curso:first').show()
@@ -71,5 +92,6 @@ $(function () {
         $('#horas').html(event.strftime('%H'));
         $('#minutos').html(event.strftime('%M'));
         $('#segundos').html(event.strftime('%S'));
-    })
+    });
+
 });
