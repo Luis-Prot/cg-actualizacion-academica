@@ -34,12 +34,10 @@
             };
         };
         // Validacion de Campos
-        if document.getElementById('calcular'){
         nombre.addEventListener('blur', validarCampos);
         apellido.addEventListener('blur', validarCampos);
         email.addEventListener('blur', validarCampos);
         email.addEventListener('blur', validarMail);
-    }
 
     }); // DOMContentLoader
 })();
@@ -94,4 +92,24 @@ $(function () {
         $('#segundos').html(event.strftime('%S'));
     });
 
+    // Patroncinio
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:1500,
+        autoplayHoverPause:true,
+        responsive: {
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 });

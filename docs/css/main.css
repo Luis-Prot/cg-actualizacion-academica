@@ -126,6 +126,9 @@ body {
   font-size: 1.2em;
   text-align: center;
 }
+.seccion p span {
+  font-weight: bold;
+}
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 2.4em;
@@ -142,7 +145,7 @@ h2 {
 } */
 h3 {
   color: #009848;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
 }
@@ -387,18 +390,27 @@ nav.menu-programa a {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-/* nav.menu-programa a.activo::after {
-  position: absolute;
+nav.menu-programa a.activo::after {
+  position: relative;
   content: '▲';
-  color: #009848;
-  left: 0;
-  right: 0;
+  color: #164389;
   margin-left: auto;
   margin-right: auto;
   height: 20px;
   width: 20px;
-  bottom: -20px;
-} */
+  bottom: 0px;
+}
+nav.menu-programa a:hover::after{
+  position: relative;
+  content: '▲';
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 20px;
+  bottom: 0px;
+}
+
 @media only screen and (min-width: 768px) {
   nav.menu-programa a {
     display: table-cell;
@@ -597,6 +609,26 @@ p.copyright {
 
 
 /* Páginas Internas */
+/* Congreso */
+div.imagen {
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.imagen img{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+div.imagen img:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+/* Patrocinio */
+.item img:hover {
+    -webkit-filter: brightness(2);
+    -webkit-transform: scale(1.1);
+}
+
 /* Registro */
 form.registro h3 {
   text-align: center;
